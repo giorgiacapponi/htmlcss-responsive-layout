@@ -1,0 +1,121 @@
+/* RESET */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* COMMON */
+body{
+    font-family: 'PT Sans', sans-serif;
+}
+
+.container{
+    width: 90%;
+    margin: 0 auto;
+}
+img{
+    max-width: 100%;
+}
+.m2rem{
+    margin: 2rem 0;
+}
+
+/* HEADER-TOP */
+.header-top{
+    height: 70px;
+    background-color:rgb(61, 119, 200) ;
+    line-height: 70px;
+    color: white;
+}
+.container.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav img{
+    vertical-align: middle;
+}
+.nav i{
+    color: white;
+    background-color:rgb(61, 119, 200) ;
+    
+}
+.nav-ul{
+    /* display: flex; */
+    list-style-type: none;
+    display: none;
+}
+.nav-ul a{
+    text-decoration: none;
+    color: inherit;
+    margin-left: 1rem;
+}
+@media screen and (min-width:992px)
+{
+    .container.nav{
+        display: flex;
+        width: 70%;
+        justify-content: space-between;
+        margin: 0 auto;
+    }
+    .nav-ul{
+        display:flex;
+    }
+    .header-nav button{
+        display: none;
+    }
+}
+/* HEADER-BOTTOM */
+.container.application{
+    padding: 3rem 0;
+}
+.col-application .card{
+    text-align: center;
+    background-color: rgb(117, 155, 229);
+    border-radius: 20px;
+    padding: 1.5em;
+}
+@media screen and (min-width:768px)
+{
+   .row-application{
+    display: flex;
+    flex-wrap: wrap;
+    /* gap: 1rem; */
+   } 
+  .col-application{
+    width: calc(100% / 3) ;
+    /* debug */
+    border: 1px solid red;
+  }
+  .col-application.large{
+    width: calc((100% / 3) * 2);
+    padding-right: 1rem;
+    
+  }
+  .card.large{
+    text-align: left;
+  }
+  .col-application.middle{
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+ 
+  
+
+}
+@media screen and (min-width:992px){
+    .container.application{
+        width: 70%;
+        margin: 0 auto;
+    }
+    .left-side{
+        display: inline-block;
+        width: 50%;
+    }
+    .right-side{
+        width: 48%;
+        padding-left: 1em;
+    }
+
+
+}
