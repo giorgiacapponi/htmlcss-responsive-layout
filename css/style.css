@@ -250,3 +250,30 @@ margin-left: 0;
         width: 30%;
     }
 }
+/* SECTION GET STARTEd */
+.container-small{
+    text-align: center;
+}
+@media screen and (min-width:768px)
+{
+    .container-small{
+        width: 60%;
+        margin: 0 auto;
+    }
+}
+@media screen and ( min-width:992px)
+{
+    .container-small{
+        width: 50%;
+    }
+}
+
+/* FOOTER */
+footer{
+    padding:3rem;
+    background-color: black;
+    color: white;
+}
+footer p{
+    margin-bottom: 4rem;
+}
