@@ -19,7 +19,9 @@ img{
 .m2rem{
     margin: 2rem 0;
 }
-
+.m1rem{
+    margin: 1rem 0;
+}
 /* HEADER-TOP */
 .header-top{
     height: 70px;
@@ -35,6 +37,9 @@ img{
 .nav img{
     vertical-align: middle;
 }
+.nav button{
+    border: none;
+}
 .nav i{
     color: white;
     background-color:rgb(61, 119, 200) ;
@@ -49,6 +54,9 @@ img{
     text-decoration: none;
     color: inherit;
     margin-left: 1rem;
+}
+.header-bottom h2,i{
+    color: rgb(86, 116, 217);
 }
 @media screen and (min-width:992px)
 {
@@ -164,12 +172,13 @@ img{
     border-radius: 20px;
     text-align: center;
     padding: 2em 1em;
+    color: white;
 
 
 }
 .img-testimonials{
-    width: 20vw;
-    height: 20vw;
+    width: 40vw;
+    height: 40vw;
     margin: 0 auto;
     border-radius: 50%;
     overflow: hidden;
@@ -207,9 +216,18 @@ img{
     color: black;
     border-radius: 20px;
     text-align: left;
+    margin-top: 1rem;
     /* debug */
     border: 1px solid red;
 }
+.section-benefits .number,h3{
+    color: blueviolet;
+}
+.number{
+    font-size: 3rem;
+    font-weight: bold;
+}
+
 @media screen and (min-width:768px)
 {
     .row-benefits{
@@ -250,9 +268,22 @@ margin-left: 0;
         width: 30%;
     }
 }
+.card-about-us h2{
+    color: blueviolet;
+}
+.right p{
+    color: blueviolet;
+}
 /* SECTION GET STARTEd */
 .container-small{
     text-align: center;
+}
+.tasparent{
+    color:#ffffff61;
+}
+.font-large{
+    font-size: 3rem;
+    color: yellow;
 }
 @media screen and (min-width:768px)
 {
