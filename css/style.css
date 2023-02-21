@@ -15,6 +15,7 @@ body{
 }
 img{
     max-width: 100%;
+    display: block;
 }
 .m2rem{
     margin: 2rem 0;
@@ -22,6 +23,7 @@ img{
 .m1rem{
     margin: 1rem 0;
 }
+
 /* HEADER-TOP */
 .header-top{
     height: 70px;
@@ -42,7 +44,7 @@ img{
 }
 .nav i{
     color: white;
-    background-color:rgb(61, 119, 200) ;
+    background-color:#0084FD ;
     
 }
 .nav-ul{
@@ -55,8 +57,14 @@ img{
     color: inherit;
     margin-left: 1rem;
 }
+.nav .button{background-color:#FFFFFF;
+    padding: .5em 1em;
+    border-radius: 30px;
+    color: black;
+    
+}
 .header-bottom h2,i{
-    color: rgb(86, 116, 217);
+    color: #0084FD;
 }
 @media screen and (min-width:992px)
 {
@@ -77,23 +85,55 @@ img{
 .container.application{
     padding: 3rem 0;
 }
+.card-large{
+    height: 100%;
+}
 .col-application .card{
     text-align: center;
-    background-color: rgb(117, 155, 229);
+    background-color:#B5DDFF;
     border-radius: 20px;
     padding: 1.5em;
+    padding-bottom: 0;
+    height: 100%;
 }
+.apple{
+    display: inline-block;
+    background-color: #0084FD;
+    padding: .5em 3em;
+    border-radius: 25px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+   
+   
+}
+.apple i{
+    color: white;
+    font-size: 1.5rem;
+    margin-right: .5rem;
+    vertical-align: middle;
+}
+.apple a{
+    color: white;
+    text-decoration: none;
+    vertical-align: middle;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
 @media screen and (min-width:768px)
 {
+    .header-bottom{
+        padding-bottom:3em;
+    }
    .row-application{
     display: flex;
     flex-wrap: wrap;
+    align-content: space-between;
 
    } 
   .col-application{
     width: calc(100% / 3) ;
-    /* debug */
-    border: 1px solid red;
+    margin-bottom: 2rem;
   }
   .col-application.large{
     width: calc((100% / 3) * 2);
@@ -102,12 +142,14 @@ img{
   }
   .card.large{
     text-align: left;
+   
   }
+ 
   .col-application.middle{
     padding-left: 1rem;
     padding-right: 1rem;
   }
- 
+ .right-side{align-self: flex-end;}
   
 
 }
@@ -124,7 +166,17 @@ img{
         width: 48%;
         padding-left: 1em;
     }
-
+    .apple{
+        margin-bottom: 3rem;
+    }
+    .card.large{
+        position: relative;
+    }
+    .right-side{
+        position: absolute;
+        bottom: 0;
+        right: 1rem;
+    }
 
 }
 /* /HEADER */
@@ -133,7 +185,7 @@ img{
 
 /* SECTION PLANNIng */
 .section-purple{
-    background-color: rgb(106, 63, 147);
+    background-color:#9792E4;
     color: white;
     padding: 3em 0;
 }
@@ -144,6 +196,17 @@ img{
     padding: 1.5em 1em;
     border-radius: 30px;
 }
+.card-developement i{
+    background-color: #9792E4;
+    color: black;
+    padding: 1em;
+    border-radius: 50%;
+    position: relative;
+    left: 44%;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+
+    }
 @media screen and (min-width:768px)
 {
     .section-purple h2{
@@ -168,7 +231,7 @@ img{
     text-align: center;
 }
 .card-testimonials{
-    background-color: blueviolet;
+    background-color:#9792E4;
     border-radius: 20px;
     text-align: center;
     padding: 2em 1em;
@@ -187,6 +250,10 @@ img{
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+.partners h2{
+    color: #9792E4;
+    font-size: 2rem;
 }
 @media screen and (min-width:768px)
 {
@@ -217,15 +284,22 @@ img{
     border-radius: 20px;
     text-align: left;
     margin-top: 1rem;
-    /* debug */
-    border: 1px solid red;
+  
 }
 .section-benefits .number,h3{
-    color: blueviolet;
+    color:#9792E4;
 }
 .number{
     font-size: 3rem;
     font-weight: bold;
+}
+.col-benefits a{display: inline-block;
+    padding: .5em 2.5em;
+    border-radius: 20px;
+    text-decoration: none;
+    color: white;
+    background-color: #9792E4;
+
 }
 
 @media screen and (min-width:768px)
@@ -255,6 +329,45 @@ img{
 .img-about-us{
 margin-left: 0;
 }
+.row-about-us{
+    line-height: 2rem;
+}
+
+.card-about-us h2{
+    color:#9792E4;
+    font-size: 3rem;
+}
+
+.right p{
+    color:#9792E4;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+.col-about-us.right a{
+    background-color: #9792E4;
+    text-decoration: none;
+    color: white;
+    padding: .2em .5em;
+    border-radius: 20px;
+
+}
+.right{
+    position: relative;
+}
+.img-about-us i{
+    color:#9792E4 ;
+    position: absolute;
+    top: 0;
+    left: 30vw;
+    font-size: 3rem;
+}
+.col-about-us.right a::before{
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    content: "\f007";
+    margin: 0 .3rem;
+  
+}
 @media screen and (min-width:768px)
 {
     .row-about-us{
@@ -267,24 +380,35 @@ margin-left: 0;
     .row-about-us .right{
         width: 30%;
     }
+    .img-about-us i{
+        position:absolute;
+        top: 0;
+        left: 11vw;
+    }
+   
 }
-.card-about-us h2{
-    color: blueviolet;
-}
-.right p{
-    color: blueviolet;
-}
+
 /* SECTION GET STARTEd */
 .container-small{
     text-align: center;
 }
 .tasparent{
-    color:#ffffff61;
+    color:#D5D4F4;
 }
 .font-large{
     font-size: 3rem;
     color: yellow;
 }
+.button-large{
+    display: inline-block;
+    padding: 1em 5em;
+    border-radius: 25px;
+    text-decoration: none;
+    background-color: white;
+    font-weight: bold;
+    color: #9792E4;
+    margin-bottom: 1rem;
+    }
 @media screen and (min-width:768px)
 {
     .container-small{
@@ -307,4 +431,7 @@ footer{
 }
 footer p{
     margin-bottom: 4rem;
+}
+footer a{
+    color: #9792E4;
 }
